@@ -2,6 +2,9 @@ import React from 'react';
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import About from './pages/About'
+import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
+import ForgotPassword from './pages/ForgotPassword'
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
@@ -13,6 +16,9 @@ function App() {
                     <Route path='/' element={<Home/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/about' element={<About/>} />
+                    <Route path='/login' element={<SignIn/>} />
+                    <Route path='/registration' element={<SignUp/>} />
+                    <Route path='/forgot' element={<ForgotPassword/>} />
                 </Routes>
             </Router>
         </div>

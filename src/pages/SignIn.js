@@ -25,7 +25,7 @@ function SignIn () {
                 <button className="md:w-48 h-10 w-32 rounded-full mt-14 text-sm bg-white text-blue-500 font-bold hover:bg-blue-500 hover:text-white ease-in-out duration-300">
                     Войти
                 </button>
-                <p className="mt-48 text-white text-md">Нет аккаунта? <Link to="/registration"><span className="text-white hover:text-blue-500 font-bold text-md ease-in-out duration-300">Зарегистрироваться</span></Link></p>
+                <p className="mt-32 md:mt-48 text-white text-md">Нет аккаунта? <Link to="/registration"><span className="text-white hover:text-blue-500 font-bold text-md ease-in-out duration-300">Зарегистрироваться</span></Link></p>
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ function Header() {
             <div className="flex justify-center items-center w-1/6">
                 <Link className="link px-5 py-3 md:py-0" to="/">
                     <ScrollIntoView selector="#first_div">
-                        <h1 className="text-white font-bold text-2xl md:text-3xl">[xd]</h1>
+                        <h1 className="text-white font-bold text-2xl md:text-3xl hover:text-blue-500 ease-in-out duration-300">[xd]</h1>
                     </ScrollIntoView>
                 </Link>
             </div>
@@ -20,12 +20,12 @@ function Header() {
                     <IoIosSearch />
                 </span>
                     <input
-                        className="block shadow-inner md:w-52 h-8 w-44 rounded-full pl-8 p-3 focus:outline-none focus:border-blue-500 focus:ring-blue-5000 focus:ring-1"
+                        className="block shadow-inner md:w-96 h-8 w-44 rounded-full pl-8 p-3 focus:outline-none focus:border-blue-500 focus:ring-blue-5000 focus:ring-1"
                         placeholder="" type="text" name="search"/>
                 </label>
-                <div id="profile_icon" className="w-8 h-8 bg-black rounded-full cursor-pointer bg-cover bg-center bg-no-repeat select-none">
-
-                </div>
+                <Link to="/login">
+                    <div id="profile_icon" className="w-8 h-8 bg-black rounded-full cursor-pointer bg-cover bg-center bg-no-repeat select-none"></div>
+                </Link>
             </div>
         </div>
     );

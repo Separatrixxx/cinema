@@ -12,11 +12,11 @@ function Home () {
         <div className="scroll-smooth bg-neutral-900">
             <Header />
             <FilmForm1 />
-            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-14">Фильмы для вас</h1>
+            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-8 md:pl-14">Фильмы для вас</h1>
             <FilmForm2 />
-            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-14">Новинки</h1>
+            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-8 md:pl-14 mt-5">Новинки</h1>
             <FilmForm3 />
-            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-14">Лучшие фильмы</h1>
+            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 pl-8 md:pl-14 mt-5">Лучшие фильмы</h1>
             <FilmForm4 />
             <Footer />
         </div>

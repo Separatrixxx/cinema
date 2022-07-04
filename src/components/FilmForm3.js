@@ -4,30 +4,28 @@ import {Link} from "react-router-dom";
 
 function FilmForm3() {
     return(
-        <div className="w-full">
-            <h1 className="text-white text-xl md:text-3xl font-bold pt-5 md:pt-10 px-5 md:px-32">Новинки</h1>
-            <div className="flex justify-center p-5 md:p-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-12">
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                    <Link to="/movie">
-                        <div className="w-72 md:w-96 h-44 md:h-60 bg-blue-200 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
-                    </Link>
-                </div>
-            </div>
+        <div id="horizontal-scroller-2" className="flex overflow-x-hidden mt-10 mx-10">
+            <Link to="/movie">
+                <div className="w-64 h-96 bg-red-200 mx-5 rounded-xl hover:bg-red-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-orange-200 mx-5 rounded-xl hover:bg-orange-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-yellow-200 mx-5 rounded-xl hover:bg-yellow-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-green-200 mx-5 rounded-xl hover:bg-green-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-blue-200 mx-5 rounded-xl hover:bg-blue-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-purple-200 mx-5 rounded-xl hover:bg-purple-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
+            <Link to="/movie">
+                <div className="w-72 h-96 bg-pink-200 mx-5 rounded-xl hover:bg-pink-300 ease-in-out duration-300 cursor-pointer"></div>
+            </Link>
         </div>
     );
 

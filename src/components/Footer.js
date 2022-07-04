@@ -6,7 +6,7 @@ import ScrollIntoView from "react-scroll-into-view";
 
 function Footer() {
     return(
-        <div className="flex flex-col items-center w-full bg-black mt-10">
+        <div className="flex flex-col items-center w-full bg-neutral-900 mt-10">
             <div className="flex flex-col md:flex-row md:flex-row justify-between items-center w-full md:w-2/3 pb-0 md:pb-10 pt-10 px-10 border-t">
                 <div className="flex justify-center w-1/4">
                      <ScrollIntoView selector="#first_div" className="cursor-pointer"><p className="text-white text-sm font-medium ml-5 hidden md:block">© 2022

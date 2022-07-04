@@ -5,6 +5,7 @@ import About from './pages/About'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import ForgotPassword from './pages/ForgotPassword'
+import Movie from './pages/Movie'
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
                     <Route path='/login' element={<SignIn/>} />
                     <Route path='/registration' element={<SignUp/>} />
                     <Route path='/forgot' element={<ForgotPassword/>} />
+                    <Route path='/movie' element={<Movie/>} />
                 </Routes>
             </Router>
         </div>

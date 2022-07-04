@@ -5,7 +5,7 @@ import {BsArrowLeft} from "react-icons/bs";
 function SignIn () {
 
     return (
-        <div className="scroll-smooth bg-black">
+        <div className="scroll-smooth bg-neutral-900">
             <div className="flex justify-start items-center absolute w-full h-12 top-0 bg-transparent px-3 md:px-7">
                 <Link to="/">
                     <h1 className="text-3xl text-white rounded-full hover:text-blue-500 transition-colors duration-300">

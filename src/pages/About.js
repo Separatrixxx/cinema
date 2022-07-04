@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 function Content () {
 
     return (
-        <div className="scroll-smooth bg-black">
+        <div className="scroll-smooth bg-neutral-900">
             <Header />
             <div className="w-full bg-black p-10 pt-20 md:p-24 h-screen">
                 <h1 className="text-white font-bold text-3xl md:text-5xl mb-14">О нас</h1>

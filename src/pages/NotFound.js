@@ -6,7 +6,7 @@ import emojiData from 'react-apple-emojis/src/data.json';
 function NotFound () {
 
     return (
-        <div className="scroll-smooth bg-blue-600 w-full h-screen flex flex-col justify-center items-center">
+        <div className="scroll-smooth bg-neutral-900 w-full h-screen flex flex-col justify-center items-center">
             <button onClick={reload}>
                 <EmojiProvider data={emojiData} ><Emoji name="pensive-face" width={120} /></EmojiProvider>
             </button>

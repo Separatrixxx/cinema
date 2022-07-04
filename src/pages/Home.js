@@ -10,7 +10,7 @@ import FilmForm4 from '../components/FilmForm4'
 function Home () {
 
     return (
-        <div className="scroll-smooth bg-black">
+        <div className="scroll-smooth bg-neutral-900">
             <Header />
             <FilmForm1 />
             <FilmForm2 />

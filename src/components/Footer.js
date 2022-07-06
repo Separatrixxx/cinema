@@ -38,12 +38,16 @@ function Footer() {
                 </div>
             </div>
             <p className="text-white text-xs m-5">by <span className="font-bold">
-                <Link to="/about" className="font-bold cursor-pointer">gachigaylords-xd</Link>
+                <Link to="/about" onClick={scrollTop} className="font-bold cursor-pointer">gachigaylords-xd</Link>
             </span></p>
 
         </div>
     );
 
+}
+
+function scrollTop() {
+    window.scrollTo(0, 0)
 }
 
 export default Footer;

@@ -1,6 +1,5 @@
 import React from "react";
 import {FaTelegramPlane, FaDiscord, FaYoutube, FaTwitter, FaVk} from "react-icons/fa";
-import {Link} from "react-router-dom";
 import ScrollIntoView from "react-scroll-into-view";
 
 
@@ -38,16 +37,12 @@ function Footer() {
                 </div>
             </div>
             <p className="text-white text-xs m-5">by <span className="font-bold">
-                <Link to="/about" onClick={scrollTop} className="font-bold cursor-pointer">gachigaylords-xd</Link>
+                <a href="/about" className="font-bold cursor-pointer">gachigaylords-xd</a>
             </span></p>
 
         </div>
     );
 
-}
-
-function scrollTop() {
-    window.scrollTo(0, 0)
 }
 
 export default Footer;

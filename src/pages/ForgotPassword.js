@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import {BsArrowLeft} from "react-icons/bs";
 
 function SignIn () {
@@ -7,11 +6,9 @@ function SignIn () {
     return (
         <div className="scroll-smooth bg-neutral-900">
             <div className="flex justify-start items-center absolute w-full h-12 top-0 bg-transparent px-3 md:px-7">
-                <Link to="/login">
-                    <h1 className="text-3xl text-white rounded-full hover:text-blue-500 transition-colors duration-300">
-                        <BsArrowLeft/>
-                    </h1>
-                </Link>
+                <a href="/login" className="text-3xl text-white rounded-full hover:text-blue-500 transition-colors duration-300">
+                    <BsArrowLeft/>
+                </a>
             </div>
             <div className="flex flex-col items-center w-full h-screen">
                 <h1 className="text-white font-bold text-2xl md:text-5xl mt-32">Восстановление пароля</h1>

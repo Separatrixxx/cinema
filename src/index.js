@@ -28,56 +28,62 @@ window.addEventListener('scroll', () => {
     lastScroll = scrollPosition();
 })
 
-document.getElementById("horizontal-scroller-1")
-    .addEventListener('wheel', function(event) {
-        let modifier;
-        // иные режимы возможны в Firefox
-        if (event.deltaMode === event.DOM_DELTA_PIXEL) {
-            modifier = 1;
-        } else if (event.deltaMode === event.DOM_DELTA_LINE) {
-            modifier = parseInt(getComputedStyle(this).lineHeight);
-        } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
-            modifier = this.clientHeight;
-        }
-        if (event.deltaY !== 0) {
-            // замена вертикальной прокрутки горизонтальной
-            this.scrollLeft += modifier * event.deltaY;
-            event.preventDefault();
-        }
-    });
+if (document.getElementById("horizontal-scroller-1") !== null) {
+    document.getElementById("horizontal-scroller-1")
+        .addEventListener('wheel', function(event) {
+            let modifier;
+            // иные режимы возможны в Firefox
+            if (event.deltaMode === event.DOM_DELTA_PIXEL) {
+                modifier = 1;
+            } else if (event.deltaMode === event.DOM_DELTA_LINE) {
+                modifier = parseInt(getComputedStyle(this).lineHeight);
+            } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
+                modifier = this.clientHeight;
+            }
+            if (event.deltaY !== 0) {
+                // замена вертикальной прокрутки горизонтальной
+                this.scrollLeft += modifier * event.deltaY;
+                event.preventDefault();
+            }
+        });
+}
 
-document.getElementById("horizontal-scroller-2")
-    .addEventListener('wheel', function(event) {
-        let modifier;
-        // иные режимы возможны в Firefox
-        if (event.deltaMode === event.DOM_DELTA_PIXEL) {
-            modifier = 1;
-        } else if (event.deltaMode === event.DOM_DELTA_LINE) {
-            modifier = parseInt(getComputedStyle(this).lineHeight);
-        } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
-            modifier = this.clientHeight;
-        }
-        if (event.deltaY !== 0) {
-            // замена вертикальной прокрутки горизонтальной
-            this.scrollLeft += modifier * event.deltaY;
-            event.preventDefault();
-        }
-    });
+if (document.getElementById("horizontal-scroller-2") !== null) {
+    document.getElementById("horizontal-scroller-2")
+        .addEventListener('wheel', function(event) {
+            let modifier;
+            // иные режимы возможны в Firefox
+            if (event.deltaMode === event.DOM_DELTA_PIXEL) {
+                modifier = 1;
+            } else if (event.deltaMode === event.DOM_DELTA_LINE) {
+                modifier = parseInt(getComputedStyle(this).lineHeight);
+            } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
+                modifier = this.clientHeight;
+            }
+            if (event.deltaY !== 0) {
+                // замена вертикальной прокрутки горизонтальной
+                this.scrollLeft += modifier * event.deltaY;
+                event.preventDefault();
+            }
+        });
+}
 
-document.getElementById("horizontal-scroller-3")
-    .addEventListener('wheel', function(event) {
-        let modifier;
-        // иные режимы возможны в Firefox
-        if (event.deltaMode === event.DOM_DELTA_PIXEL) {
-            modifier = 1;
-        } else if (event.deltaMode === event.DOM_DELTA_LINE) {
-            modifier = parseInt(getComputedStyle(this).lineHeight);
-        } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
-            modifier = this.clientHeight;
-        }
-        if (event.deltaY !== 0) {
-            // замена вертикальной прокрутки горизонтальной
-            this.scrollLeft += modifier * event.deltaY;
-            event.preventDefault();
-        }
-    });
+if (document.getElementById("horizontal-scroller-3") !== null) {
+    document.getElementById("horizontal-scroller-3")
+        .addEventListener('wheel', function(event) {
+            let modifier;
+            // иные режимы возможны в Firefox
+            if (event.deltaMode === event.DOM_DELTA_PIXEL) {
+                modifier = 1;
+            } else if (event.deltaMode === event.DOM_DELTA_LINE) {
+                modifier = parseInt(getComputedStyle(this).lineHeight);
+            } else if (event.deltaMode === event.DOM_DELTA_PAGE) {
+                modifier = this.clientHeight;
+            }
+            if (event.deltaY !== 0) {
+                // замена вертикальной прокрутки горизонтальной
+                this.scrollLeft += modifier * event.deltaY;
+                event.preventDefault();
+            }
+        });
+}

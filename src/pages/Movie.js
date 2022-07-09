@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header'
+import HeaderFilm from '../components/HeaderFilm'
 import Footer from '../components/Footer'
 import MovieForm from "../components/MovieForm";
 
@@ -10,7 +10,7 @@ function Movie () {
 
     return (
             <div className="scroll-smooth bg-neutral-900">
-                <Header />
+                <HeaderFilm />
                 <MovieForm />
                 <div id="kinoplayertop" data-player="bazon" data-kinopoisk={kinopoiskId}></div>
                 <Footer />

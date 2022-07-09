@@ -71,19 +71,19 @@ class MovieForm extends React.Component {
                             <div>
                                 <div className="flex flex-row justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Дата премьеры</p>
-                                    <p className="text-white text-sm md:text-base ml-10">{premiere_date}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{premiere_date}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Страна</p>
-                                    <p className="text-white text-sm md:text-base ml-10">{country}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{country}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Жанр</p>
-                                    <p className="text-white text-sm md:text-base ml-10">{genres}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{genres}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Режиссёр</p>
-                                    <p className="text-white text-sm md:text-base ml-10">{producer}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{producer}</p>
                                 </div>
                                 <div className="flex justify-center items-center w-12 md:w-14 h-7 md:h-9 border-2 border-neutral-400 mt-5 rounded-lg md:rounded-xl">
                                     <p className="text-neutral-400 font-bold">{age}+</p>

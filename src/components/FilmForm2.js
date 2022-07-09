@@ -35,13 +35,18 @@ class FilmForm2 extends React.Component {
         const { error, isLoaded, list } = this.state;
         if (error) {
             return (
-                <div className="bg-neutral-900 pt-20 p-5">
-                    <h1 className="text-white font-bold text-xl md:text-3xl">Ошибка: {error.message}</h1>
-                    <p className="text-white text-base md:text-xl mt-3">Извините, произошла ошибка при загрузке фильмов</p>
+                <div className="flex flex-col justify-center items-center h-screen bg-neutral-900 pt-20 p-5">
+                    <h1 className="text-white font-bold text-3xl md:text-5xl">Ошибка: {error.message}</h1>
+                    <p className="text-white text-xl md:text-3xl mt-5">Извините, произошла ошибка при</p>
+                    <p className="text-white text-xl md:text-3xl mt-1">загрузке фильмов</p>
                 </div>
             );
         } else if (!isLoaded) {
-            return <div className="bg-neutral-900 pt-20 text-white p-5 text-xl md:text-3xl">Загрузка...</div>;
+            return (
+                <div className="flex flex-col justify-center items-center h-screen bg-neutral-900 pt-20 p-5">
+                    <h1 className="text-white font-bold text-3xl md:text-5xl">Загрузка...</h1>
+                </div>
+            );
         } else {
             return (
                 <div className="flex justify-center">

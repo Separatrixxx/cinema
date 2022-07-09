@@ -32,7 +32,7 @@ function Footer() {
 
                 <div className="flex justify-center w-1/4">
                     <ScrollIntoView selector="#first_div" className="cursor-pointer"><p className="text-white text-sm font-medium mt-12 block md:hidden">© 2022
-                        <span className="font-semibold">[xd]</span></p>
+                        <span className="font-semibold"> [xd]</span></p>
                     </ScrollIntoView>
                 </div>
             </div>

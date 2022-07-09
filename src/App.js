@@ -23,7 +23,7 @@ function App() {
                     <Route path='/forgot' element={<ForgotPassword/>} />
                     <Route path='/movie' element={<Movie/>} />
 
-                    <Route path="/movie" element={<Movie />}>
+                    <Route path="/movie">
                         <Route index element={<NotFound />} />
                         <Route path=":id" element={<Movie />} />
                     </Route>

@@ -37,7 +37,7 @@ class FilmForm2 extends React.Component {
             return (
                 <div className="bg-neutral-900 pt-20 p-5">
                     <h1 className="text-white font-bold text-xl md:text-3xl">Ошибка: {error.message}</h1>
-                    <p className="text-white text-base md:text-xl mt-3">Извините, произошла ошибка при загрузке данных фильма</p>
+                    <p className="text-white text-base md:text-xl mt-3">Извините, произошла ошибка при загрузке фильмов</p>
                 </div>
             );
         } else if (!isLoaded) {

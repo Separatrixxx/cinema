@@ -48,9 +48,14 @@ class MovieForm extends React.Component {
     render() {
         const { error, isLoaded, title, description, cover, premiere_date, country, genres, age, producer } = this.state;
         if (error) {
-            return <div className="bg-white">Ошибка: {error.message}</div>;
+            return (
+                <div className="bg-neutral-900 pt-20 p-5">
+                    <h1 className="text-white font-bold text-xl md:text-3xl">Ошибка: {error.message}</h1>
+                    <p className="text-white text-base md:text-xl mt-3">Извините, произошла ошибка при загрузке данных фильма</p>
+                </div>
+            );
         } else if (!isLoaded) {
-            return <div className="bg-white">Загрузка...</div>;
+            return <div className="bg-neutral-900 pt-20 text-white p-5 text-xl md:text-3xl">Загрузка...</div>;
         } else {
             return (
                 <div className="flex flex-col md:flex-row w-full py-28 md:py-20 px-14 md:px-32">

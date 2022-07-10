@@ -54,7 +54,7 @@ function App() {
                     <Route path='/noir' element={<Genres/>} />
                     <Route path='/musicals' element={<Genres/>} />
                     <Route path='/search'>
-                        <Route index element={<NotFound />} />
+                        <Route index element={<Search />} />
                         <Route path=":id" element={<Search />} />
                     </Route>
                 </Routes>

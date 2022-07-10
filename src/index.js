@@ -115,6 +115,9 @@ input.addEventListener('keypress', function(e){
     if(e.which === 13){
         e.preventDefault();
         let val = document.getElementById('search').value;
+        if (/[A-Z][А-Я]/.test(val.charAt(0)) === false) {
+            val = val.charAt(0).toUpperCase() + val.slice(1)
+        }
         if (val !== '') {
             window.location.href = `/search/${val}`
         }

@@ -103,7 +103,7 @@ class GenresForm extends React.Component {
             if (list.length === 0) {
                 return (
                     <div className="flex justify-center items-center bg-neutral-900 h-screen">
-                        <h className="text-white font-bold text-3xl md:text-5xl text-center">Не найдено фильмов в выбранной категории</h>
+                        <h1 className="text-white font-bold text-3xl md:text-5xl text-center">Не найдено фильмов в выбранной категории</h1>
                     </div>
                 );
             } else {

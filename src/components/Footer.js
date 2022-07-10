@@ -8,8 +8,8 @@ function Footer() {
         <div className="flex flex-col items-center w-full bg-neutral-900 pt-20">
             <div className="flex flex-col md:flex-row md:flex-row justify-between items-center w-full md:w-2/3 pb-0 md:pb-10 pt-10 px-10 border-t">
                 <div className="flex justify-center">
-                    <ScrollIntoView selector="#first_div" className="cursor-pointer"><p className="text-white text-sm font-medium ml-5 hidden md:block">© 2022
-                        <span className="font-semibold"> [xd]</span></p>
+                    <ScrollIntoView selector="#first_div" className="cursor-pointer">
+                        <p className="text-white text-sm font-medium ml-5 hidden md:block">© 2022<span className="font-semibold"> [xd]</span></p>
                     </ScrollIntoView>
                 </div>
                 <div className="flex justify-center">
@@ -29,9 +29,7 @@ function Footer() {
                         <FaTwitter/>
                     </a>
                 </div>
-                <ScrollIntoView selector="#first_div" className="cursor-pointer">
-                    <p className="text-white text-sm font-medium mt-12 block md:hidden">© 2022 <span className="font-semibold">[xd]</span></p>
-                </ScrollIntoView>
+                <p className="text-white text-sm font-medium mt-12 block md:hidden">© 2022 <span className="font-semibold">[xd]</span></p>
             </div>
             <p className="text-white text-xs m-5">by <span className="font-bold">
                 <a href="/about" className="font-bold cursor-pointer">gachigaylords-xd</a>

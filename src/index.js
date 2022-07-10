@@ -110,11 +110,13 @@ if (document.location.pathname === '/') {
 
 let input = document.querySelector('input[type="text"]');
 
-
 input.addEventListener('keypress', function(e){
     if(e.which === 13){
         e.preventDefault();
         let val = document.getElementById('search').value;
+
+        val = val.toLowerCase()
+
         if (/[A-Z][А-Я]/.test(val.charAt(0)) === false) {
             val = val.charAt(0).toUpperCase() + val.slice(1)
         }

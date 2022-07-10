@@ -8,7 +8,7 @@ function Content () {
         <div className="scroll-smooth bg-neutral-900">
             <HeaderFilm />
             <div className="flex flex-col w-full items-start p-10 pt-20 md:p-24 h-screen">
-                <h1 className="text-white font-bold text-3xl md:text-5xl mb-7">О нас</h1>
+                <h1 className="text-white font-bold text-3xl md:text-5xl mb-9">О нас</h1>
                 <p className="text-white text-2xl md:text-4xl mb-9 text-start">Команда <span className="text-blue-500">gachigaylords-xd </span>
                 на треке Online-cinema, в состав которой входят:</p>
                 <a href="https://vk.com/speeky" target="_blank" rel="noreferrer" className="text-white text-2xl md:text-3xl hover:text-blue-500 mb-5 ease-in-out duration-300 cursor-pointer">Абдуллаев Егор</a>

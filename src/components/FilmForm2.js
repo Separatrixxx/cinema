@@ -18,7 +18,7 @@ class FilmForm2 extends React.Component {
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        list: result.list
+                        list: result.list.reverse()
                     });
                 },
 
@@ -49,7 +49,7 @@ class FilmForm2 extends React.Component {
         } else {
             return (
                 <div className="flex justify-center">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-7 md:gap-12 pt-20">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-12 pt-5">
                         {list.map(item => (
                             <a key={item.id_kinopoisk} href={`/movie/${item.id_kinopoisk}`}>
                                 <div className="w-32 md:w-64 h-48 md:h-96">

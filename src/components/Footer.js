@@ -1,11 +1,11 @@
 import React from "react";
-import {FaTelegramPlane, FaDiscord, FaYoutube, FaTwitter, FaVk} from "react-icons/fa";
+import {FaTelegramPlane, FaDiscord, FaYoutube, FaVk} from "react-icons/fa";
 import ScrollIntoView from "react-scroll-into-view";
 
 
 function Footer() {
     return(
-        <div className="flex flex-col items-center w-full bg-neutral-900 mt-10">
+        <div className="flex flex-col items-center w-full bg-neutral-900 pt-20">
             <div className="flex flex-col md:flex-row md:flex-row justify-between items-center w-full md:w-2/3 pb-0 md:pb-10 pt-10 px-10 border-t">
                 <div className="flex justify-center w-1/4">
                      <ScrollIntoView selector="#first_div" className="cursor-pointer"><p className="text-white text-sm font-medium ml-5 hidden md:block">© 2022
@@ -24,9 +24,6 @@ function Footer() {
                     </a>
                     <a id="youtube" className="text-2xl text-white mx-5 transition-colors duration-300" href="/">
                         <FaYoutube/>
-                    </a>
-                    <a id="twitter" className="text-2xl text-white mx-5 transition-colors duration-300" href="/">
-                        <FaTwitter/>
                     </a>
                 </div>
 

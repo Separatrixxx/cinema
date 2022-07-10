@@ -9,6 +9,11 @@ function HeaderFilm() {
                     <h1 className="text-white font-bold text-2xl md:text-3xl hover:text-blue-500 ease-in-out duration-300">[xd]</h1>
                 </a>
             </div>
+            <div className="flex justify-end items-center w-5/6">
+                <a href="/login">
+                    <div id="profile_icon" className="w-8 h-8 bg-black rounded-full cursor-pointer bg-cover bg-center bg-no-repeat select-none"></div>
+                </a>
+            </div>
         </div>
     );
 

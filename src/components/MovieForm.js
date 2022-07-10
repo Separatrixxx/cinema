@@ -6,7 +6,7 @@ class MovieForm extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            list: []
+            list: [],
         };
     }
 
@@ -26,6 +26,7 @@ class MovieForm extends React.Component {
                         isLoaded: true,
                         title: result.title,
                         description: result.description,
+                        id_kinopoisk: result.id_kinopoisk,
                         cover: result.cover,
                         premiere_date: result.premiere_date,
                         country: result.country,
@@ -46,40 +47,111 @@ class MovieForm extends React.Component {
     }
 
     render() {
-        const { error, isLoaded, title, description, cover, premiere_date, country, genres, age, producer } = this.state;
+        const { error, isLoaded, title, description, id_kinopoisk, cover, premiere_date, country, genres, age, producer } = this.state;
+        if (document.location.pathname === `/movie/${id_kinopoisk}`) {
+            document.title = '[xd] - ' + title;
+        }
+
+        let year;
+        let month;
+        let day;
+        let firstNumberOfDay;
+        let secondNumberOfDay;
+
+        if (premiere_date !== undefined) {
+            year = premiere_date.slice(0, 4)
+            month = premiere_date.slice(5, 7)
+            day = premiere_date.slice(8, 10)
+            firstNumberOfDay = premiere_date.slice(8, 9)
+            secondNumberOfDay =  premiere_date.slice(9, 10)
+        }
+
+        let countryNew = '';
+
+        if (country !== undefined) {
+            for (let i = 0; i < country.length; i++) {
+                countryNew = countryNew + country[i] + ', '
+            }
+        }
+
+        countryNew = countryNew.substring(0, countryNew.length - 2);
+
+        let genresNew = '';
+
+        if (genres !== undefined) {
+            for (let i = 0; i < genres.length; i++) {
+                genresNew = genresNew + genres[i] + ', '
+            }
+        }
+
+        genresNew = genresNew.substring(0, genresNew.length - 2);
+
+        let monthNew;
+        let dayNew;
+
+        if (month === '01') {
+            monthNew = 'января'
+        } else if (month === '02') {
+            monthNew = 'февраля'
+        } else if (month === '03') {
+            monthNew = 'марта'
+        } else if (month === '04') {
+            monthNew = 'апреля'
+        } else if (month === '05') {
+            monthNew = 'мая'
+        } else if (month === '06') {
+            monthNew = 'июня'
+        } else if (month === '07') {
+            monthNew = 'июля'
+        } else if (month === '08') {
+            monthNew = 'августа'
+        } else if (month === '09') {
+            monthNew = 'сентября'
+        } else if (month === '10') {
+            monthNew = 'октября'
+        } else if (month === '11') {
+            monthNew = 'ноября'
+        } else if (month === '12') {
+            monthNew = 'декабря'
+        }
+
+        if (firstNumberOfDay === '0') {
+            dayNew = secondNumberOfDay
+        } else {
+            dayNew = day
+        }
+
         if (error) {
             return (
-                <div className="bg-neutral-900 pt-20 p-5">
-                    <h1 className="text-white font-bold text-xl md:text-3xl text-center">Ошибка: {error.message}</h1>
-                    <p className="text-white text-base md:text-xl text-center mt-3">Извините, произошла ошибка при загрузке данных фильма</p>
-                </div>
+                window.location.href = `/error/${error.message}`
             );
         } else if (!isLoaded) {
             return <div className="bg-neutral-900 pt-20 text-white p-5 text-xl md:text-3xl text-center">Загрузка...</div>;
         } else {
             return (
-                <div className="flex flex-col md:flex-row w-full py-28 md:py-20 px-14 md:px-32">
-                    <div className="w-full md:w-1/4 h-96 bg-blue-200 rounded-xl bg-cover bg-center"
+                <div className="flex flex-col items-center md:items-start md:flex-row w-full py-28 md:py-20 px-14 md:px-32">
+                    <img src={cover} className="w-72 bg-blue-200 rounded-xl bg-cover bg-center cursor-pointer"
                          style={{
-                             backgroundImage: `url(${cover})`
-                         }}>
-                    </div>
-                    <div className="w-full md:w-3/4 ml-0 md:ml-10">
+                             width: '18rem',
+                             height: '26rem'
+                         }} alt={title}>
+                    </img>
+                    <div className="flex flex-col items-start w-full md:w-2/5 xl:w-3/4 ml-0 md:ml-10">
                         <h1 className="text-white font-bold text-2xl md:text-5xl mt-10 md:mt-0">{title}</h1>
                         <p className="text-white text-base md:text-xl mt-5">{description}</p>
                         <div className="flex flex-row mt-10">
                             <div>
                                 <div className="flex flex-row justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Дата премьеры</p>
-                                    <p className="text-white text-sm md:text-base ml-5">{premiere_date}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{dayNew + ' ' + monthNew + ' ' + year + ' г.'}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Страна</p>
-                                    <p className="text-white text-sm md:text-base ml-5">{country}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{countryNew}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Жанр</p>
-                                    <p className="text-white text-sm md:text-base ml-5">{genres}</p>
+                                    <p className="text-white text-sm md:text-base ml-5">{genresNew}</p>
                                 </div>
                                 <div className="flex flex-row mt-3 justify-start">
                                     <p className="text-neutral-400 text-sm md:text-base">Режиссёр</p>

@@ -86,6 +86,16 @@ class MovieForm extends React.Component {
 
         genresNew = genresNew.substring(0, genresNew.length - 2);
 
+        let producerNew = '';
+
+        if (producer !== undefined) {
+            for (let i = 0; i < producer.length; i++) {
+                producerNew = producerNew + producer[i] + ', '
+            }
+        }
+
+        producerNew = producerNew.substring(0, producerNew.length - 2);
+
         let monthNew;
         let dayNew;
 
@@ -171,7 +181,7 @@ class MovieForm extends React.Component {
                                             <p className="text-neutral-400 text-sm md:text-base">Режиссёр</p>
                                         </td>
                                         <td className="border-none">
-                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{producer}</p>
+                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{producerNew}</p>
                                         </td>
                                     </tr>
                                 </table>

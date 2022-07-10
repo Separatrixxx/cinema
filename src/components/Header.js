@@ -16,7 +16,7 @@ function Header() {
                     <IoIosSearch />
                 </span>
                     <input id="search"
-                        className="block shadow-inner md:w-96 h-8 w-44 rounded-full pl-8 p-3 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-blue-500 focus:bg-gray-200 hover:bg-gray-200 ease-in-out duration-300"
+                        className="block shadow-inner md:w-96 h-8 w-44 rounded-full pl-8 p-3 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-blue-500  hover:bg-gray-200 ease-in-out duration-300"
                         placeholder="" type="text" name="search"/>
                 </label>
                 <a href="/login">

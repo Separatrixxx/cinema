@@ -18,7 +18,7 @@ function SignIn () {
                 <input
                     className="block shadow-inner md:w-96 h-10 w-64 mt-7 rounded-full pl-8 p-3 focus:outline-none focus:bg-blue-300 focus:text-white ease-in-out duration-300"
                     placeholder="Пароль" type="text"/>
-                <a href="/forgot"><p className="mt-5 text-white hover:text-blue-500 font-bold text-sm ease-in-out duration-300">Забыли пароль?</p></a>
+                <a href="/forgot_password"><p className="mt-5 text-white hover:text-blue-500 font-bold text-sm ease-in-out duration-300">Забыли пароль?</p></a>
                 <button className="md:w-48 h-10 w-32 rounded-full mt-14 text-sm bg-white text-blue-500 font-bold hover:bg-blue-500 hover:text-white ease-in-out duration-300">
                     Войти
                 </button>

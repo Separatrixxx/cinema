@@ -8,7 +8,12 @@ function Movie () {
     let kpid2 = kpid1.substr(kpid1.indexOf("/") + 1);
     let kinopoiskId = kpid2.substr(kpid2.indexOf("/") + 1);
 
-    return (
+    const error = 'invalid id'
+
+    if (/[a-zA-ZА-я]/.test(kinopoiskId) === true) {
+        window.location.href = `/error/${error}`
+    } else {
+        return (
             <div className="scroll-smooth bg-neutral-900">
                 <HeaderFilm />
                 <MovieForm />
@@ -16,6 +21,7 @@ function Movie () {
                 <Footer />
             </div>
         );
+    }
 }
 
 

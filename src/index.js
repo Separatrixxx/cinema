@@ -87,3 +87,36 @@ if (document.getElementById("horizontal-scroller-3") !== null) {
             }
         });
 }
+
+
+
+if (document.location.pathname === '/') {
+    document.title = '[xd] - Онлайн-кинотеатр';
+} else if (document.location.pathname === '/login') {
+    document.title = '[xd] - Авторизация';
+} else if (document.location.pathname === '/registration') {
+    document.title = '[xd] - Регистрация';
+} else if (document.location.pathname === '/forgot_password') {
+    document.title = '[xd] - Восстановление пароля';
+} else if (document.location.pathname === '/about') {
+    document.title = '[xd] - О нас';
+}  else if (document.location.pathname === '/comedy') {
+    document.title = '[xd] - Комедии';
+} else if (document.location.pathname.includes('error')) {
+    document.title = '[xd] - Ошибка';
+} else {
+    document.title = '[xd] - 404';
+}
+
+let input = document.querySelector('input[type="text"]');
+
+
+input.addEventListener('keypress', function(e){
+    if(e.which === 13){
+        e.preventDefault();
+        let val = document.getElementById('search').value;
+        if (val !== '') {
+            window.location.href = `/search/${val}`
+        }
+    }
+});

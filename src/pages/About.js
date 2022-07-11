@@ -7,7 +7,7 @@ function Content () {
     return (
         <div className="scroll-smooth bg-neutral-900">
             <HeaderFilm />
-            <div className="flex flex-col w-full items-start p-10 pt-20 md:p-24 h-screen">
+            <div className="flex flex-col w-full items-start p-10 pt-20 md:p-24 h-screen select-none lg:select-auto">
                 <h1 className="text-white font-bold text-3xl md:text-5xl mb-9">О нас</h1>
                 <p className="text-white text-2xl md:text-4xl mb-9 text-start">Команда <span className="text-blue-500">gachigaylords-xd </span>
                 на треке Online-cinema, в состав которой входят:</p>

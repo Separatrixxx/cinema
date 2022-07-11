@@ -110,16 +110,18 @@ if (document.location.pathname === '/') {
 
 let input = document.querySelector('input[type="text"]');
 
-input.addEventListener('keypress', function(e){
-    if(e.which === 13){
-        e.preventDefault();
-        let val = document.getElementById('search').value;
+if (input !== null) {
+    input.addEventListener('keypress', function(e){
+        if(e.which === 13){
+            e.preventDefault();
+            let val = document.getElementById('search').value;
 
-        val = val.toLowerCase()
-        val = val.charAt(0).toUpperCase() + val.slice(1)
+            val = val.toLowerCase()
+            val = val.charAt(0).toUpperCase() + val.slice(1)
 
-        if (val !== '') {
-            window.location.href = `/search/${val}`
+            if (val !== '') {
+                window.location.href = `/search/${val}`
+            }
         }
-    }
-});
+    });
+}

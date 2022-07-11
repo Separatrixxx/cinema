@@ -43,6 +43,7 @@ function App() {
                     <Route path='/adventures' element={<Genres/>} />
                     <Route path='/fantasy' element={<Genres/>} />
                     <Route path='/war' element={<Genres/>} />
+                    <Route path='/family' element={<Genres/>} />
                     <Route path='/anime' element={<Genres/>} />
                     <Route path='/historical' element={<Genres/>} />
                     <Route path='/drama' element={<Genres/>} />
@@ -52,6 +53,8 @@ function App() {
                     <Route path='/westerns' element={<Genres/>} />
                     <Route path='/noir' element={<Genres/>} />
                     <Route path='/musicals' element={<Genres/>} />
+                    <Route path='/music' element={<Genres/>} />
+                    <Route path='/sport' element={<Genres/>} />
                     <Route path='/search'>
                         <Route index element={<Search />} />
                         <Route path=":id" element={<Search />} />
@@ -59,7 +62,6 @@ function App() {
                 </Routes>
             </Router>
         </div>
-
     );
 }
 

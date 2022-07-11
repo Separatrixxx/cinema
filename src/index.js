@@ -104,8 +104,6 @@ if (document.location.pathname === '/') {
     document.title = '[xd] - Комедии';
 } else if (document.location.pathname.includes('error')) {
     document.title = '[xd] - Ошибка';
-} else {
-    document.title = '[xd] - 404';
 }
 
 let input = document.querySelector('input[type="text"]');

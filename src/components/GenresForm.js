@@ -39,7 +39,9 @@ class GenresForm extends React.Component {
             genreRus = 'фэнтези'
         } else if (genreEng === 'war') {
             genreRus = 'военный'
-        } else if (genreEng === 'anime') {
+        } else if (genreEng === 'family') {
+            genreRus = 'семейный'
+        }  else if (genreEng === 'anime') {
             genreRus = 'аниме'
         } else if (genreEng === 'historical') {
             genreRus = 'история'
@@ -57,9 +59,13 @@ class GenresForm extends React.Component {
             genreRus = 'фильм-нуар'
         } else if (genreEng === 'musicals') {
             genreRus = 'мюзикл'
+        } else if (genreEng === 'music') {
+            genreRus = 'музыка'
+        } else if (genreEng === 'sport') {
+            genreRus = 'спорт'
         }
 
-        let urlFetch = "http://localhost:8000/get_movie_by_genres/?genres=" + genreRus
+        let urlFetch = "https://v00jte.deta.dev/get_movie_by_genres/?genres=" + genreRus
 
         console.log(genreRus)
 

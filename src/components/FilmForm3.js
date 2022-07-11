@@ -59,6 +59,11 @@ function FilmForm3() {
                     <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Военные</p>
                 </div>
             </a>
+            <a href="/family">
+                <div id="family" className="flex justify-center items-end w-24 md:w-48 h-24 md:h-48 bg-red-200 mx-3 md:mx-5 bg-cover bg-center bg-no-repeat rounded-xl hover:bg-red-300 m-3 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                    <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Семейные</p>
+                </div>
+            </a>
             <a href="/anime">
                 <div id="anime" className="flex justify-center items-end w-24 md:w-48 h-24 md:h-48 bg-red-200 mx-3 md:mx-5 bg-cover bg-center bg-no-repeat rounded-xl hover:bg-red-300 m-3 hover:scale-105 ease-in-out duration-300 cursor-pointer">
                     <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Аниме</p>
@@ -102,6 +107,16 @@ function FilmForm3() {
             <a href="/musicals">
                 <div id="musicals" className="flex justify-center items-end w-24 md:w-48 h-24 md:h-48 bg-red-200 mx-3 md:mx-5 bg-cover bg-center bg-no-repeat rounded-xl hover:bg-red-300 m-3 hover:scale-105 ease-in-out duration-300 cursor-pointer">
                     <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Мюзиклы</p>
+                </div>
+            </a>
+            <a href="/music">
+                <div id="music" className="flex justify-center items-end w-24 md:w-48 h-24 md:h-48 bg-red-200 mx-3 md:mx-5 bg-cover bg-center bg-no-repeat rounded-xl hover:bg-red-300 m-3 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                    <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Музыкальные</p>
+                </div>
+            </a>
+            <a href="/sport">
+                <div id="sport" className="flex justify-center items-end w-24 md:w-48 h-24 md:h-48 bg-red-200 mx-3 md:mx-5 bg-cover bg-center bg-no-repeat rounded-xl hover:bg-red-300 m-3 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                    <p className="text-white font-bold text-xs md:text-xl pb-1 md:pb-3 text-center">Спортивные</p>
                 </div>
             </a>
         </div>

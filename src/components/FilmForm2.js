@@ -12,7 +12,7 @@ class FilmForm2 extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/get_movie_many/?count=1000000")
+        fetch("https://v00jte.deta.dev/get_movie_many/?count=1000000")
             .then(res => res.json())
             .then(
                 (result) => {

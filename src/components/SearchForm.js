@@ -16,7 +16,7 @@ class SearchForm extends React.Component {
         let search2 = search1.substr(search1.indexOf("/") + 1);
         let search = search2.substr(search2.indexOf("/") + 1);
 
-        let urlFetch = "http://localhost:8000/get_movie_by_title/?title=" + search
+        let urlFetch = "https://v00jte.deta.dev/get_movie_by_title/?title=" + search
 
         fetch(urlFetch)
             .then(res => res.json())

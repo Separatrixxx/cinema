@@ -32,7 +32,7 @@ function Footer() {
                 <p className="text-white text-sm font-medium mt-12 block md:hidden">© 2022 <span className="font-semibold">[xd]</span></p>
             </div>
             <p className="text-white text-xs m-5">by <span className="font-bold">
-                <a href="/about" className="font-bold cursor-pointer">gachigaylords-xd</a>
+                <a href="/about" className="font-bold cursor-pointer">[xd]</a>
             </span></p>
         </div>
     );

@@ -53,7 +53,7 @@ class FilmForm2 extends React.Component {
                         {list.map(item => (
                             <a key={item.id_kinopoisk} href={`/movie/${item.id_kinopoisk}`}>
                                 <div className="w-32 md:w-64 h-48 md:h-96">
-                                    <div className="flex items-end w-32 md:w-64 h-48 md:h-96 bg-cover bg-center rounded-xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+                                    <div className="flex items-end w-32 md:w-64 h-48 md:h-96 bg-blue-200 bg-cover bg-center rounded-xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
                                          style={{
                                              backgroundImage: `url(${item.cover})`
                                          }}>

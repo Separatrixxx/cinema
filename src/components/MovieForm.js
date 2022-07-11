@@ -140,7 +140,7 @@ class MovieForm extends React.Component {
         } else {
             return (
                 <div className="flex flex-col items-center lg:items-start lg:flex-row w-full pt-28 lg:pt-20 px-14 pb-5 lg:pb-10 lg:px-32">
-                    <img src={cover} className="w-72 bg-blue-200 rounded-xl bg-cover bg-center cursor-pointer"
+                    <img src={cover} className="w-72 bg-blue-200 rounded-xl bg-blue-200 bg-cover bg-center cursor-pointer"
                          style={{
                              width: '18rem',
                              height: '26rem'

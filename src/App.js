@@ -43,7 +43,6 @@ function App() {
                     <Route path='/adventures' element={<Genres/>} />
                     <Route path='/fantasy' element={<Genres/>} />
                     <Route path='/war' element={<Genres/>} />
-                    <Route path='/family' element={<Genres/>} />
                     <Route path='/anime' element={<Genres/>} />
                     <Route path='/historical' element={<Genres/>} />
                     <Route path='/drama' element={<Genres/>} />

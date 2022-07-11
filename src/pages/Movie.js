@@ -17,7 +17,7 @@ function Movie () {
             <div className="scroll-smooth bg-neutral-900">
                 <HeaderFilm />
                 <MovieForm />
-                <div className="px-10 md:px-32">
+                <div className="px-10 lg:px-32">
                     <div id="kinoplayertop" data-player="bazon" data-kinopoisk={kinopoiskId}></div>
                 </div>
                 <Footer />

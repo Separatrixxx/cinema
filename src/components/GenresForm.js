@@ -39,8 +39,6 @@ class GenresForm extends React.Component {
             genreRus = 'фэнтези'
         } else if (genreEng === 'war') {
             genreRus = 'военный'
-        } else if (genreEng === 'family') {
-            genreRus = 'семейный'
         } else if (genreEng === 'anime') {
             genreRus = 'аниме'
         } else if (genreEng === 'historical') {

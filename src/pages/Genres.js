@@ -32,8 +32,6 @@ function Genres () {
         genreRusMn = 'Фэнтези'
     } else if (genreEng === 'war') {
         genreRusMn = 'Военные'
-    } else if (genreEng === 'family') {
-        genreRusMn = 'Семейные'
     } else if (genreEng === 'anime') {
         genreRusMn = 'Аниме'
     } else if (genreEng === 'historical') {

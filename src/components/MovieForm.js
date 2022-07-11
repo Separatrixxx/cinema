@@ -16,7 +16,7 @@ class MovieForm extends React.Component {
         let kpid2 = kpid1.substr(kpid1.indexOf("/") + 1);
         let kinopoiskId = kpid2.substr(kpid2.indexOf("/") + 1);
 
-        let urlFetch = "https://ib7l04.deta.dev/get_movie/?id=" + kinopoiskId
+        let urlFetch = "https://121hv1.deta.dev/get_movie/?id=" + kinopoiskId
 
         fetch(urlFetch)
             .then(res => res.json())
@@ -152,38 +152,40 @@ class MovieForm extends React.Component {
                         <div className="flex flex-row mt-5">
                             <div>
                                 <table className="border-separate border-spacing-y-3 border border-neutral-900">
-                                    <tr>
-                                        <td className="border-none">
-                                            <p className="text-neutral-400 text-sm lg:text-base">Дата премьеры</p>
-                                        </td>
-                                        <td className="border-none">
-                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{dayNew + ' ' + monthNew + ' ' + year + ' г.'}</p>
-                                        </td>
-                                    </tr>
-                                    <tr className="pt-10">
-                                        <td className="border-none">
-                                            <p className="text-neutral-400 text-sm lg:text-base">Страна</p>
-                                        </td>
-                                        <td className="border-none">
-                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{countryNew}</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-none">
-                                            <p className="text-neutral-400 text-sm lg:text-base">Жанр</p>
-                                        </td>
-                                        <td className="border-none">
-                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{genresNew}</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-none">
-                                            <p className="text-neutral-400 text-sm lg:text-base">Режиссёр</p>
-                                        </td>
-                                        <td className="border-none">
-                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{producerNew}</p>
-                                        </td>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td className="border-none">
+                                                <p className="text-neutral-400 text-sm lg:text-base">Дата премьеры</p>
+                                            </td>
+                                            <td className="border-none">
+                                                <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{dayNew + ' ' + monthNew + ' ' + year + ' г.'}</p>
+                                            </td>
+                                        </tr>
+                                        <tr className="pt-10">
+                                            <td className="border-none">
+                                                <p className="text-neutral-400 text-sm lg:text-base">Страна</p>
+                                            </td>
+                                            <td className="border-none">
+                                                <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{countryNew}</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-none">
+                                                <p className="text-neutral-400 text-sm lg:text-base">Жанр</p>
+                                            </td>
+                                            <td className="border-none">
+                                                <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{genresNew}</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="border-none">
+                                                <p className="text-neutral-400 text-sm lg:text-base">Режиссёр</p>
+                                            </td>
+                                            <td className="border-none">
+                                                <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{producerNew}</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <div className="flex justify-center items-center w-12 lg:w-14 h-7 lg:h-9 border-2 border-neutral-400 mt-5 rounded-lg lg:rounded-xl">
                                     <p className="text-neutral-400 font-bold">{age}+</p>

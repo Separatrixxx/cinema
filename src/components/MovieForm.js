@@ -139,7 +139,7 @@ class MovieForm extends React.Component {
             return <div className="bg-neutral-900 pt-20 text-white p-5 text-xl md:text-3xl text-center">Загрузка...</div>;
         } else {
             return (
-                <div className="flex flex-col items-center md:items-start md:flex-row w-full py-28 md:py-20 px-14 md:px-32">
+                <div className="flex flex-col items-center md:items-start md:flex-row w-full pt-28 md:pt-20 px-14 pb-5 md:pb-10 md:px-32">
                     <img src={cover} className="w-72 bg-blue-200 rounded-xl bg-cover bg-center cursor-pointer"
                          style={{
                              width: '18rem',

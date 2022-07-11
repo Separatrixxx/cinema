@@ -16,7 +16,7 @@ class MovieForm extends React.Component {
         let kpid2 = kpid1.substr(kpid1.indexOf("/") + 1);
         let kinopoiskId = kpid2.substr(kpid2.indexOf("/") + 1);
 
-        let urlFetch = "http://localhost:8000/get_movie/?id=" + kinopoiskId
+        let urlFetch = "https://me28q0.deta.dev/get_movie/?id=" + kinopoiskId
 
         fetch(urlFetch)
             .then(res => res.json())

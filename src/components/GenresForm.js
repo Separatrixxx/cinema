@@ -59,7 +59,7 @@ class GenresForm extends React.Component {
             genreRus = 'мюзикл'
         }
 
-        let urlFetch = "http://localhost:8000/get_movie_by_genres/?genres=" + genreRus
+        let urlFetch = "https://me28q0.deta.dev/get_movie_by_genres/?genres=" + genreRus
 
         console.log(genreRus)
 

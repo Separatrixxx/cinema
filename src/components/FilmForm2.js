@@ -12,13 +12,13 @@ class FilmForm2 extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://numbersapi.com/random/year?json")
+        fetch("https://ib7l04.deta.dev/get_movie_many/?count=1000000")
             .then(res => res.json())
             .then(
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        text: result.text
+                        list: result.list.reverse()
                     });
                 },
 
@@ -32,7 +32,7 @@ class FilmForm2 extends React.Component {
     }
 
     render() {
-        const { error, isLoaded, text } = this.state;
+        const { error, isLoaded, list } = this.state;
         if (error) {
             return (
                 <div className="flex flex-col justify-center items-center h-screen bg-neutral-900 pt-20 p-5">
@@ -50,7 +50,17 @@ class FilmForm2 extends React.Component {
             return (
                 <div className="flex justify-center">
                     <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-12 pt-5">
-                        <h1 className="text-white">{text}</h1>
+                        {list.map(item => (
+                            <a key={item.id_kinopoisk} href={`/movie/${item.id_kinopoisk}`}>
+                                <div className="w-32 md:w-64 h-48 md:h-96">
+                                    <div className="flex items-end w-32 md:w-64 h-48 md:h-96 bg-cover bg-center rounded-xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+                                         style={{
+                                             backgroundImage: `url(${item.cover})`
+                                         }}>
+                                    </div>
+                                </div>
+                            </a>
+                        ))}
                     </div>
                 </div>
             );

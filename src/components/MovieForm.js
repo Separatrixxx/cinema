@@ -139,53 +139,53 @@ class MovieForm extends React.Component {
             return <div className="bg-neutral-900 pt-20 text-white p-5 text-xl md:text-3xl text-center">Загрузка...</div>;
         } else {
             return (
-                <div className="flex flex-col items-center md:items-start md:flex-row w-full pt-28 md:pt-20 px-14 pb-5 md:pb-10 md:px-32">
+                <div className="flex flex-col items-center lg:items-start lg:flex-row w-full pt-28 lg:pt-20 px-14 pb-5 lg:pb-10 lg:px-32">
                     <img src={cover} className="w-72 bg-blue-200 rounded-xl bg-cover bg-center cursor-pointer"
                          style={{
                              width: '18rem',
                              height: '26rem'
                          }} alt={title}>
                     </img>
-                    <div className="flex flex-col items-start w-full md:w-2/5 xl:w-3/4 ml-0 md:ml-10">
-                        <h1 className="text-white font-bold text-2xl md:text-5xl mt-10 md:mt-0">{title}</h1>
-                        <p className="text-white text-base md:text-xl mt-5">{description}</p>
+                    <div className="flex flex-col items-start w-full lg:w-2/5 xl:w-3/4 ml-0 lg:ml-10">
+                        <h1 className="text-white font-bold text-2xl lg:text-5xl mt-10 lg:mt-0">{title}</h1>
+                        <p className="text-white text-base lg:text-xl mt-5">{description}</p>
                         <div className="flex flex-row mt-5">
                             <div>
                                 <table className="border-separate border-spacing-y-3 border border-neutral-900">
                                     <tr>
                                         <td className="border-none">
-                                            <p className="text-neutral-400 text-sm md:text-base">Дата премьеры</p>
+                                            <p className="text-neutral-400 text-sm lg:text-base">Дата премьеры</p>
                                         </td>
                                         <td className="border-none">
-                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{dayNew + ' ' + monthNew + ' ' + year + ' г.'}</p>
+                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{dayNew + ' ' + monthNew + ' ' + year + ' г.'}</p>
                                         </td>
                                     </tr>
                                     <tr className="pt-10">
                                         <td className="border-none">
-                                            <p className="text-neutral-400 text-sm md:text-base">Страна</p>
+                                            <p className="text-neutral-400 text-sm lg:text-base">Страна</p>
                                         </td>
                                         <td className="border-none">
-                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{countryNew}</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border-none">
-                                            <p className="text-neutral-400 text-sm md:text-base">Жанр</p>
-                                        </td>
-                                        <td className="border-none">
-                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{genresNew}</p>
+                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{countryNew}</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="border-none">
-                                            <p className="text-neutral-400 text-sm md:text-base">Режиссёр</p>
+                                            <p className="text-neutral-400 text-sm lg:text-base">Жанр</p>
                                         </td>
                                         <td className="border-none">
-                                            <p className="text-white text-sm md:text-base ml-5 md:ml-7">{producerNew}</p>
+                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{genresNew}</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border-none">
+                                            <p className="text-neutral-400 text-sm lg:text-base">Режиссёр</p>
+                                        </td>
+                                        <td className="border-none">
+                                            <p className="text-white text-sm lg:text-base ml-5 lg:ml-7">{producerNew}</p>
                                         </td>
                                     </tr>
                                 </table>
-                                <div className="flex justify-center items-center w-12 md:w-14 h-7 md:h-9 border-2 border-neutral-400 mt-5 rounded-lg md:rounded-xl">
+                                <div className="flex justify-center items-center w-12 lg:w-14 h-7 lg:h-9 border-2 border-neutral-400 mt-5 rounded-lg lg:rounded-xl">
                                     <p className="text-neutral-400 font-bold">{age}+</p>
                                 </div>
                             </div>

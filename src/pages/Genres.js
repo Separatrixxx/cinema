@@ -32,6 +32,8 @@ function Genres () {
         genreRusMn = 'Фэнтези'
     } else if (genreEng === 'war') {
         genreRusMn = 'Военные'
+    } else if (genreEng === 'family') {
+        genreRusMn = 'Семейные'
     } else if (genreEng === 'anime') {
         genreRusMn = 'Аниме'
     } else if (genreEng === 'historical') {
@@ -50,6 +52,10 @@ function Genres () {
         genreRusMn = 'Фильмы-нуар'
     } else if (genreEng === 'musicals') {
         genreRusMn = 'Мюзиклы'
+    } else if (genreEng === 'music') {
+        genreRusMn = 'Музыка'
+    } else if (genreEng === 'sport') {
+        genreRusMn = 'Спортивные'
     }
 
     document.title = '[xd] - ' + genreRusMn;
